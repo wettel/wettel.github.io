@@ -1,0 +1,281 @@
+* {
+ padding: 0;
+ margin: 0;
+ border: 0;
+}
+body {
+ font-family: verdana, arial, helvetica, sans-serif;
+ font-size: 76%;/* font sizing in ems, baby. if you want to change anything, just change this.*/
+ color: #666666;
+ font-size: 12px;
+ text-align: left;
+ background-repeat:repeat;
+}
+
+h1 {
+	font-size: 2.0em;
+	font-weight: normal;
+	margin-top: 0em;
+	margin-bottom: 0em;/*both set to zero and padding in header div used intead to deal with compound ie pc problems that are beyound summary in a simple comment.*/
+	}
+h2 {
+	font-size: 1.7em;
+	}
+h3 {
+	font-size: 1.5em;
+	}
+h4 {
+	font-size: 1.3em;
+	}
+	
+a {
+text-decoration: none;
+font-weight: bold;
+color: #0066CC;
+}
+
+a:hover {
+text-decoration: underline;
+}
+	
+
+.wrapper {
+ width: 740px;
+ margin: 0 auto;
+}
+
+p {
+margin-bottom: 1em;
+}
+
+
+/* ------------------------ Start Header -----------------*/
+#header {
+ width: inherit;
+ margin: 0px 0px 0px 0px;
+ /*background: #333333;*/
+ min-height: 3em;
+ padding: 0.5em 0em 0.5em 0em;
+ /*border:#333333 thin solid;*/
+}
+* html #header {height: 3em} /* IE Min-Height Hack */ 
+
+#header h1 {
+ padding-left: 0.5em;
+ color: #333;
+}
+
+#header h1 a {
+ font-weight: normal;
+ text-decoration: none;
+ color:#333333;
+}
+
+#header h1 a:hover {
+ color: #0066CC;
+}
+
+/* ------------------------ End Header -----------------*/
+
+/* ------------------------ Start Menu -----------------*/
+
+.Menu {
+  width: inherit;
+  /*background: #333;*/
+  /*border-bottom: 1px solid #333;*/
+  margin: 0;
+  min-height: 1.5em;
+  list-style: none;
+  font-size: 1em;
+  padding: 0 0 0 0;
+  /*border:#333333 thin solid;*/
+}
+* html .Menu {height: 1.5em} /* IE Min-Height Hack */ 
+
+.Menu li {
+  margin-right: 2px;
+  border-bottom: none;
+  display: inline; /* Menu links are horizontally aligned using display: inline */
+  font-weight: bold;
+}
+
+.Menu li a {
+  margin: 0 -2px 0 0;
+  padding: 3px 12px 3px 12px; /* Display: block won't work in this example, instead we are using padding */
+  color: #333;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  background: #ededed;
+}
+
+.Menu li a:hover {
+  color: #06C;
+  border-color:#333333;
+}
+
+.Menu li#active {
+  margin: 0 3px 0 0 !important;
+  padding: 3px 6px 3px 8px; /* Display: block won't work in this example, instead we are using padding */
+  background: #333;
+  border: 1px solid #333;
+  border-bottom: 1px solid #333;
+  color:#FFF;
+}
+
+
+.Menu .subMenu {
+  float: left;
+  text-align: left; /* If both menus are going to be left-aligned we really don't need to use text-align: left on the sub menu, since this menu will get the alignment from "mother" settings */
+  width: 100%;
+  margin: 3px 0 0px 0 !important;
+  padding: 3px 0 3px 0;
+  border: 1px solid #333;
+  border-bottom: none;
+  background-color:#333;
+}
+
+* html .Menu .subMenu {
+  margin: 2px 0 5px 0 !important;
+}
+
+.Menu .subMenu li {
+  padding: 3px 0 3px 0; 
+  border: 0;
+}
+
+.Menu .subMenu li a {
+  color:#999999;
+  background: #333;
+  border: 0;
+}
+
+.Menu .subMenu li a:hover {
+	background: #333;
+	color:#0066CC;
+}
+
+
+.Menu .subMenu li#subActive {
+  padding: 3px 6px 3px 8px;
+  font-weight: bold;
+}
+
+/* ------------------------ End Menu -----------------*/
+
+
+
+#content {
+ width: inherit;	
+ float: left;
+ color:#000000;
+ background-color:#FFFFFF;
+ /*margin-bottom: 13px;*/
+ border:#666 thin solid;
+}
+
+#content h2 {
+margin: 1em 0 0.25em 0;
+}
+
+#content h3 {
+margin: 0.75em 0 0.2em 0;
+}
+
+#content h4 {
+margin: 0.5em 0 0.15em 0;
+}
+
+
+#content li{
+	padding-bottom: 0.5em;
+	margin-left: 2em;
+}
+
+
+#centercolumn { /* Parent Wrapper for inside boxes */ 
+ margin: 15px;
+ display: inline; /* IE Hack */
+ float: left;
+}
+
+#leftcolumn { /* Parent Wrapper for inside boxes */ 
+ margin: 15px;
+ display: inline; /* IE Hack */
+ width: 448px;
+ float: left;
+ clear: left;
+}
+
+.post {
+text-align: justify;
+}
+
+#rightcolumn {
+ margin: 15px 15px 15px 5px;
+ display: inline; /* IE Hack */
+ width: 240px;
+ float: left;
+ clear: right;
+}
+
+.news {
+font-size: 0.8em;
+background: #9CCBFF;
+padding: 5px;
+margin: 10px 0;
+}
+
+
+/* ------------------------ Start Footer -----------------*/
+#footer {
+ float: left;
+ width: inherit;
+ font-size: 0.8em;
+ margin: 0 auto;
+ color:#333;
+ /*background: #333333;*/
+ background: #ededed;
+ text-align: center;
+ /*border:#333333 thin solid;*/
+ border: 1px solid #ccc;
+ border-top: none;
+}
+
+/* ------------------------ End Footer -----------------*/
+
+/* ----- taken from http://rjohara.net/server/css-figures-captions/ ---- */
+
+/* figure-divs and their supporters */
+
+div.figure {
+  padding: 10px; 
+  margin: 0.67em auto; /* needed to support centering of almost-full-width figures */
+  border: thin solid silver;
+  /*background:#FFFFCC;*/
+}
+
+div.figure img { width: 100%; }
+
+div.figure p { /* the default "legend" style, as opposed to "caption" */
+  font-family: verdana, arial, sans-serif;
+  font-size: smaller;
+  padding-left: 1%;
+  padding-right: 1%;
+  line-height: 1.1;
+  margin: 0.25em auto 0 auto;
+}
+div.figure p.caption { text-align: center; }
+/* "caption" for short phrases; "legend" (default) is for continuous prose */
+
+.full { width: 90%; padding: 10px; margin: 0.67em auto; }
+/* "full" should be unnecessary, but this responds to the box model bugs in IE */
+.half { width: 50%; padding: 10px; margin: 0.5em 0.67em; }
+.third { width: 33%; padding: 10px; margin: 0.5em 0.67em; }
+.quarter { width: 25%; border: none; padding: 5px; margin: 0.25em 0.5em; }
+.fifth { width: 20%; border: none; padding: 5px; margin: 0.25em 1%; }
+
+.right { float: right; margin-left: 2%; }
+.left { float: left; margin-right: 2%; }
+
+/* end figure-divs */
