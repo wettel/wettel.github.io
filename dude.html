@@ -1,71 +1,105 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head><title>DuDe</title>
-<link rel="stylesheet" href="style.css" type="text/css" media="screen, projection" />
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta name="MSSmartTagsPreventParsing" content="TRUE" />
-<meta http-equiv="expires" content="-1" />
-<meta http-equiv= "pragma" content="no-cache" />
-<meta name="robots" content="all" />
-<meta name="author" content="Richard Wettel" />
-<meta name="description" content="DuDe" />
-<meta name="keywords" content="DuDe duplication clone detection detector chain software Java Smalltalk C C++ language independent tool free"/>
-</head><body>
-	
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-var pageTracker = _gat._getTracker("UA-1230003-1");
-pageTracker._initData();
-pageTracker._trackPageview();
-</script>
+
+<head>
+  <title>DuDe</title>
+  <link rel="stylesheet" href="style.css" type="text/css" media="screen, projection" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="MSSmartTagsPreventParsing" content="TRUE" />
+  <meta http-equiv="expires" content="-1" />
+  <meta http-equiv="pragma" content="no-cache" />
+  <meta name="robots" content="all" />
+  <meta name="author" content="Richard Wettel" />
+  <meta name="description" content="DuDe" />
+  <meta name="keywords"
+    content="DuDe duplication clone detection detector chain software Java Smalltalk C C++ language independent tool free" />
+</head>
+
+<body>
+
+  <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+    var pageTracker = _gat._getTracker("UA-1230003-1");
+    pageTracker._initData();
+    pageTracker._trackPageview();
+  </script>
 
   <div class="wrapper">
-	<div id="header"><h1><a href="index.html">Richard Wettel</a></h1></div>  
-	
-		<ul class="Menu">
-			<li><a href="index.html">Home</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="codecity.html">CodeCity</a></li>             
-            <li id="active">DuDe</li>                      
-            <li><a href="activities.html">Activities</a></li>
-      	</ul>
+    <div id="header">
+      <h1><a href="index.html">Richard Wettel</a></h1>
+    </div>
 
-	<div id="content">
-    	<div id="leftcolumn"><img src="pics/dude_logo.png" alt="dude logo" width="448" /></div>
-        <div id="rightcolumn">
-        	<a href="download/dude.jar" 
-            onclick="javascript: pageTracker._trackPageview('/github/wettel/downloads/tools/dude'); ">
-            <img src="pics/dudedownload.png" alt="download" /></a>
-       	<div class="news">
-            Double-click on the jar file to run DuDe (you need JRE 1.5 or higher). To tweak the Java memory settings, run it from the console:<br /><br />
-            java -Xms256m -Xmx1024m -jar dude.jar
+    <ul class="Menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="codecity.html">CodeCity</a></li>
+      <li id="active">DuDe</li>
+      <li><a href="activities.html">Activities</a></li>
+    </ul>
+
+    <div id="content">
+      <div id="leftcolumn"><img src="pics/dude_logo.png" alt="dude logo" width="448" /></div>
+      <div id="rightcolumn">
+        <a href="download/dude.jar"
+          onclick="javascript: pageTracker._trackPageview('/github/wettel/downloads/tools/dude'); ">
+          <img src="pics/dudedownload.png" alt="download" /></a>
+        <div class="news">
+          Double-click on the jar file to run DuDe (you need JRE 1.5 or higher). To tweak the Java memory settings, run
+          it from the console:<br /><br />
+          java -Xms256m -Xmx1024m -jar dude.jar
         </div>
       </div>
-    	<div id="centercolumn">
-           	<div class="post">
-            <h2>Description</h2>
-            <p>DuDe is a text-based, language-independent code duplication (code clones) detector, gravitating around the concept of duplication chain. The tool is written in Java and runs on every major platform. Here is a snapshot of DuDe, applied on its own source code:</p><br />
-            <img src="pics/dude_screenshot.png" alt="dude" />
-            <h2>Trivia</h2>
-            <ul>
-            <li>DuDe has been successfully used along with other tools for assessing the quality of a large C++ system (over 50'000 files) developed by a telecommunication company. The effort was sustained by 3 research groups coming from the swiss universities of Lugano and Bern and the university of Timisoara, Romania.</li>
-            <li>Although it was not the purpose of the tool, DuDe has been a real help in detecting fraud in student assignments.</li>
-            <li>DuDe served as concept proof and tool support for both my diploma and master theses, in which I researched a lightweight approach on language-independent clone detection. The published outcome of this research also includes a full paper at SYNASC 2005, a poster at ICSM 2005, and a tool demo of iPlasma at ICSM 2005, all available on my <a href="publications.html">Publications</a> page.</li>
-            <li>I developed DuDe during the times I was an active member of the <a href="http://loose.cs.upt.ro">LOOSE Research Group</a> at the &quot;Politehnica&quot; University of Timisoara, Romania. That is why DuDe is available in two forms: this standalone version and one integrated in the <a href="http://loose.upt.ro/iplasma/">iPlasma</a> reengineering framework, where the results of the detection are placed in the context of other software metrics to detect software design flaws.</li>
-            <li>In the book <a href="https://link.springer.com/book/10.1007/3-540-39538-5">Object-Oriented Metrics in Practice</a>, written by <a href="http://www.inf.usi.ch/faculty/lanza">Michele Lanza</a> and <a href="http://staff.cs.upt.ro/~radum">Radu Marinescu</a> in 2006, the authors used for the part that addresses the disharmony called Relevant Duplication my approach based on duplication chains and DuDe as tool support.</li>
-            <li>DuDe has also been ported to Smalltalk by Mihai Balint and <a href="http://www.tudorgirba.com">Tudor Girba</a> and integrated in the <a href="http://www.moosetechnology.org">Moose</a> software analysis environment under the name of SmallDude.</li>
-            <li>The DuDe logo on this page is made of elementary duplication chunks linked by non-matching gaps, which fully complies with the scatterplot-inspired mechanism we use to build the duplication chains.</li>
-            </ul>
-           	</div>
-		</div>	<!-- end centercolumn -->	
-   	</div>	<!-- end content -->
-	<div id="footer"><script type="text/javascript" src="datemod.js"></script></div>
-  </div>	<!-- end wrapper -->
+      <div id="centercolumn">
+        <div class="post">
+          <h2>Description</h2>
+          <p>DuDe is a text-based, language-independent code duplication (code clones) detector, gravitating around the
+            concept of duplication chain. The tool is written in Java and runs on every major platform. Here is a
+            snapshot of DuDe, applied on its own source code:</p><br />
+          <img src="pics/dude_screenshot.png" alt="dude" />
+          <h2>Trivia</h2>
+          <ul>
+            <li>DuDe has been successfully used along with other tools for assessing the quality of a large C++ system
+              (over 50'000 files) developed by a telecommunication company. The effort was sustained by 3 research
+              groups coming from the swiss universities of Lugano and Bern and the university of Timisoara, Romania.
+            </li>
+            <li>Although it was not the purpose of the tool, DuDe has been a real help in detecting fraud in student
+              assignments.</li>
+            <li>DuDe served as concept proof and tool support for both my diploma and master theses, in which I
+              researched a lightweight approach on language-independent clone detection. The published outcome of this
+              research also includes a full paper at SYNASC 2005, a poster at ICSM 2005, and a tool demo of iPlasma at
+              ICSM 2005, all available on my <a href="publications.html">Publications</a> page.</li>
+            <li>I developed DuDe during the times I was an active member of the <a href="http://loose.cs.upt.ro">LOOSE
+                Research Group</a> at the &quot;Politehnica&quot; University of Timisoara, Romania. That is why DuDe is
+              available in two forms: this standalone version and one integrated in the <a
+                href="http://loose.upt.ro/iplasma/">iPlasma</a> reengineering framework, where the results of the
+              detection are placed in the context of other software metrics to detect software design flaws.</li>
+            <li>In the book <a href="https://link.springer.com/book/10.1007/3-540-39538-5">Object-Oriented Metrics in
+                Practice</a>, written by <a href="http://www.inf.usi.ch/faculty/lanza">Michele Lanza</a> and <a
+                href="http://staff.cs.upt.ro/~radum">Radu Marinescu</a> in 2006, the authors used for the part that
+              addresses the disharmony called Relevant Duplication my approach based on duplication chains and DuDe as
+              tool support.</li>
+            <li>DuDe has also been ported to Smalltalk by <a href="http://www.loose.upt.ro/~mihai">Mihai Balint</a>
+              and <a href="http://www.tudorgirba.com">Tudor Girba</a> and integrated in the
+              <a href="http://www.moosetechnology.org">Moose</a> software analysis environment under the name of
+              SmallDude.
+            </li>
+            <li>The DuDe logo on this page is made of elementary duplication chunks linked by non-matching gaps, which
+              fully complies with the scatterplot-inspired mechanism we use to build the duplication chains.</li>
+          </ul>
+        </div>
+      </div> <!-- end centercolumn -->
+    </div> <!-- end content -->
+    <div id="footer">
+      <script type="text/javascript" src="datemod.js"></script>
+    </div>
+  </div> <!-- end wrapper -->
 
-	
+
 </body>
+
 </html>
